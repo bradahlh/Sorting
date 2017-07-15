@@ -29,7 +29,7 @@ void SelectionSort(int array[], int size)
 	{
 		int small = i;						// Presumes index i to be smallest
 		for (int j = i + 1; j < size; j++)	// Checks against idx <next> to last
-			if (array[j] < array[small])
+			if (array[j] < array[small])b                                                                                                                                                                                                 
 				small = j;					// Sets new smallest (if found)
 		int temp = array[i];				// Swaps smallest with elmnt at
 		array[i] = array[small];			//   current idx
