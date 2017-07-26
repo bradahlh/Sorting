@@ -6,14 +6,16 @@ void InsertionSort(int a[], int n);
 int main()
 {
 	int arr[] = { 0,4,3,2,5,6,3,1,10,23,2,5,3,8 };
-	int size = sizeof(arr) / sizeof(int);
+	int size = sizeof(arr) / sizeof(int);	// Compute # of elements
 
+	// Display array before sorting
 	cout << "Array before sort:\n";
 	for (int i = 1; i < size; i++)
 		cout << arr[i] << " ";
 
 	InsertionSort(arr, size);
 
+	// Display array after sorting
 	cout << "\n\nArray after sort:\n";
 	for (int i = 1; i < size; i++)
 		cout << arr[i] << " ";
