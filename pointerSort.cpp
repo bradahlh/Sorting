@@ -1,12 +1,26 @@
 #include <iostream>
 using namespace std;
 
+
+
 void Insertion(int a[], int p[], int N);
 
 int main() {
-	int arr[] = { 4,32,2,54,23,2,64,99,2,4,5 };
+	int arr[] = { -999,4,32,2,54,23,2,64,99,2,4,5 };
 	int sizeOfArray = sizeof(arr) / sizeof(int);
+	int pArr[12];
 
+	cout << "Before sort" << endl;
+	for (int i = 1; i < sizeOfArray; i++)
+		cout << arr[pArr[i]] << " ";
+
+	Insertion(arr, pArr, sizeOfArray);
+
+	cout << "\n\nAfter sort" << endl;
+	for (int i = 1; i < sizeOfArray; i++)
+		cout << arr[pArr[i]] << " ";
+
+	cout << endl << endl;
 	return 0;
 }
 
